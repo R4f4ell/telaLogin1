@@ -1,0 +1,150 @@
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-container {
+  background-color: #1F2937;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  color: #f3f4f6;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 480px) {
+  .form-container {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+}
+.form-container .title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 480px) {
+  .form-container .title {
+    font-size: 1.4rem;
+  }
+}
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form-container .form .input-group label {
+  display: block;
+  color: #9ca3af;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+.form-container .form .input-group input {
+  width: 100%;
+  padding: 12px;
+  background-color: #111827;
+  border: 1px solid #374151;
+  border-radius: 6px;
+  color: #f3f4f6;
+  font-size: 0.95rem;
+}
+.form-container .form .input-group input:focus {
+  border-color: #a78bfa;
+  outline: none;
+}
+.form-container .form .input-group .forgot {
+  text-align: right;
+  margin-top: 6px;
+}
+.form-container .form .input-group .forgot a {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  text-decoration: none;
+}
+.form-container .form .input-group .forgot a:hover {
+  text-decoration: underline;
+  color: #a78bfa;
+}
+.form-container .form .sign {
+  background-color: #a78bfa;
+  color: #111827;
+  border: none;
+  padding: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.form-container .form .sign:hover {
+  background-color: rgb(204.0909090909, 187.8925619835, 252.1074380165);
+}
+.form-container .social-message {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+.form-container .social-message .line {
+  flex: 1;
+  height: 1px;
+  background-color: #374151;
+}
+.form-container .social-message .message {
+  padding: 0 10px;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+.form-container .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.form-container .social-icons .icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+.form-container .social-icons .icon img {
+  width: 20px;
+  height: 20px;
+  filter: invert(100%);
+}
+.form-container .social-icons .icon:hover {
+  transform: scale(1.1);
+}
+.form-container .signup {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 1.5rem;
+  color: #9ca3af;
+}
+.form-container .signup a {
+  color: #f3f4f6;
+  text-decoration: none;
+}
+.form-container .signup a:hover {
+  text-decoration: underline;
+  color: #a78bfa;
+}
+
+body {
+  background-color: #111827;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../scss/pages/partials/_login.scss%22,%22../../scss/global/_variables.scss%22,%22../../scss/global/_elements.scss%22,%22../../scss/global/_normalize.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAEA;EACE;EACA;EACA;EACA;;;AAGF;EACE,kBCTQ;EDUR;EACA;EACA;EACA;EACA,OCbW;EDcX;;AAEA;EATF;IAUI;IACA;;;AAGF;EACE;EACA;EACA;EACA;;AAEA;EANF;IAOI;;;AAIJ;EACE;EACA;EACA;;AAGE;EACE;EACA,OCvCK;EDwCL;EACA;;AAGF;EACE;EACA;EACA,kBClDE;EDmDF;EACA;EACA,OCnDK;EDoDL;;AAEA;EACE,cCrDA;EDsDA;;AAIJ;EACE;EACA;;AAEA;EACE;EACA,OCjEG;EDkEH;;AAEA;EACE;EACA,OCrEF;;AD2EN;EACE,kBC5EI;ED6EJ,OCjFI;EDkFJ;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;;AAKN;EACE;EACA;EACA;;AAEA;EACE;EACA;EACA,kBClGS;;ADqGX;EACE;EACA;EACA,OC1GO;;AD8GX;EACE;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;;AAGF;EACE;;AAKN;EACE;EACA;EACA;EACA,OCzIS;;AD2IT;EACE,OC7IO;ED8IP;;AAEA;EACE;EACA,OChJE;;;ACFR;EACE,kBDHM;ECIN;EACA;EACA;EACA;EACA;EACA;;;ACTJ;EACI;EACA;EACA;EACA%22,%22file%22:%22main.css%22%7D */
