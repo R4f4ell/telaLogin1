@@ -1,15 +1,1 @@
-document.getElementById("loginForm").addEventListener("submit", (e) => {
-    e.preventDefault();
-  
-    const username = document.getElementById("username").value.trim();
-    const password = document.getElementById("password").value.trim();
-  
-    if (!username || !password) {
-      alert("Please fill in all fields.");
-      return;
-    }
-  
-    // Simulação de login
-    alert(`Bem-vindo, ${username}!`);
-  });
-  
+document.addEventListener("DOMContentLoaded",(()=>{document.querySelector("#loginForm").addEventListener("submit",handleLogin)}));const handleLogin=e=>{e.preventDefault();const o=document.querySelector("#username").value.trim(),r=document.querySelector("#password").value.trim();isValidInput(o,r)?showWelcome(o):showError("Por favor, preencha todos os campos.")},isValidInput=(e,o)=>e.length>0&&o.length>0,showError=e=>{console.error(e),alert(e)},showWelcome=e=>{alert(`Bem-vindo, ${e}!`)};
